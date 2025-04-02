@@ -6,9 +6,11 @@ export default function NotFound() {
   const pathname = usePathname();
   const productId = pathname.split("/")[2];
   const reviewId = pathname.split("/")[4];
-    return (
+  return (
     <>
-      <h2>Review {reviewId} not found for {productId}</h2>
+      <h2>
+        Review {reviewId} not found for {productId}
+      </h2>
     </>
-  )
+  );
 }
